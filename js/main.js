@@ -30,13 +30,12 @@ function theAjax(action,url,type,mime) {
 			//	Status is OK
 			if (hReq.status === 200) {
 				if (hReq.responseText) {
-					wooh();	
+					console.log('Sucess!');
 				} else {
-					womp();
+					console.log('Womp womp!');
 				}
 			} else {
 				console.log('We have run into a problem with your request.', 'Status: ' + hReq.status);
-				womp();
 			}
 		}
 	}
@@ -46,12 +45,7 @@ function theAjax(action,url,type,mime) {
 	}
 	hReq.send();
 }
-function wooh() {
-	console.log('Sucess!');
-}
-function womp() {
-	console.log('Womp womp!');
-}
+
 $('button[name="ajax-button"]').on('click', function() {
 	theAjax('GET','nutrition.xml');
 });
