@@ -55,12 +55,13 @@ function theAjax(action,url,type,mime) {
 							//	this is where templates would come in handy, but thats not what this exercise is for
 							output = output+
 								'<li>'+
-								'<h2>'+foodName.val+'</h2>'+
-								'<ul>'+
-								'<li><strong>Serving Size:</strong> '+serving.val+serving.unit+'</li>'+
-								'<li><strong>Calories per serving:</strong> '+calories.total+'</li>'+
-								'<li><strong>Calories from Fat:</strong> '+calories.fat+'</li>'+
-								'</ul>';
+									'<h2>'+foodName.val+'</h2>'+
+									'<ul>'+
+										'<li><strong>Serving Size:</strong> '+serving.val+serving.unit+'</li>'+
+										'<li><strong>Calories per serving:</strong> '+calories.total+'</li>'+
+										'<li><strong>Calories from Fat:</strong> '+calories.fat+'</li>'+
+									'</ul>'+
+								'</li>';
 						}
 					}
 					//	close the container
